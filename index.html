@@ -4,8 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <nav>
+    <h1>
+      Library
+    </h1>
+  </nav>
+  <div class="main">
+    
+    <div class="book-form">
+      <p>Add book</p>
+      <button id="new-book-button">New Book</button>
+      <div id="new-book-modal" class="hidden new-book-modal">
+        <div class="new-book-modal-content">
+          <button class="new-book-button-close"></button>
+          <form action="" id="new-book" class="new-book-form">
+            <label for="title">Book title:</label>
+            <input type="text" name="title" id="title">
+            <label for="author">Book author:</label>
+            <input type="text" name="author" id="author">
+            <label for="pages">Pages:</label>
+            <input type="number" name="pages" id="pages">
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" id="read">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content"></div>
+  </div>
 </body>
 </html>
