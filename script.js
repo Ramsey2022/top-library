@@ -33,7 +33,7 @@ function addReadButtons() {
   const readButtons = document.getElementsByClassName("book-button-read");
   for (let i = 0; i < readButtons.length; i++) {
     readButtons[i].addEventListener("click", (e) => {
-      e.target.parentNode.classlist.toggle("read");
+      e.target.parentNode.classList.toggle("read");
       if (myLibrary.read == true) {
         myLibrary[i].read = false;
       } else {
